@@ -6,7 +6,7 @@ function ProductItem(props) {
 
   return (
     <div>
-      <div className='flex flex-col justify-center items-center w-90 m-3 border-1 
+      <div className='flex flex-col justify-center items-center w-90 m-3 h-130 border-1 
                 border-indigo-500/50 rounded-2xl hover:shadow-xl' key={product.id}>
                 <img className='size-60' src={product.image}/>
                 <div className='text-center'>

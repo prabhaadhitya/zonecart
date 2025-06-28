@@ -4,14 +4,15 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import { PageContainer, PageContextProvider } from './context/PageContextProvider.jsx'
-
-
+import { DarkModeContextProvider} from './context/DarkModeContextProvider.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <PageContextProvider>
-        <App />
-      </PageContextProvider>
+      <DarkModeContextProvider>
+        <PageContextProvider>
+          <App />
+        </PageContextProvider>
+      </DarkModeContextProvider>      
     </BrowserRouter>    
   </StrictMode>,
 )
