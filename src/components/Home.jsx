@@ -88,7 +88,7 @@ function Home() {
       </div>
 
       <div className={darkMode ? 'dark' : '' }>
-        <main className='flex justify-center min-w-60 h-screen bg-white text-black dark:bg-gray-900 dark:text-white'>
+        <main className='flex justify-center min-w-60 bg-white text-black dark:bg-gray-900 dark:text-white'>
           <div className='flex flex-col'>
             <ProductList filteredSortedGroupByArr={filteredSortedGroupByArr} />
             <div className='flex justify-center'>
